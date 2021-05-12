@@ -3,8 +3,10 @@
 ### Introduction
 Reads a binary file and outputs each byte in either hex or int form with any chosen prepending and appending string.
 
-### Arguments
+### Usage and Arguments
 ```
+usage: getFileBytes.py [-h] -f FILE [-p PREPEND] [-a APPEND] [-t {int,hex}]
+                       [-o OUTPUT]
 optional arguments:
   -h, --help            show this help message and exit
   -f FILE, --file FILE  File to read bytes from
