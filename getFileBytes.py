@@ -5,7 +5,7 @@ from argparse import ArgumentParser
 # Reads bytes from file
 def parseBytes(filePath):
     for each_line in open(filePath,'rb'):
-        for each_byte in each_line.rstrip(b"\n"):
+        for each_byte in each_line:
             yield each_byte
 
 # Parse args
