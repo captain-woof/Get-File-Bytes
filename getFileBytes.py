@@ -19,7 +19,7 @@ args = parser.parse_args()
 
 # Initial setup
 byteStream = parseBytes(args.file)
-template = "{0}{1}{2}".format(args.prepend,r"{}" if args.format == 'int' else r"{:x}",args.append)
+template = "{0}{1}{2}".format(args.prepend,r"{}" if args.format == 'int' else r"{:02x}",args.append)
 outputFile = None if args.output is None else open(args.output,'w+')
 
 # Read and output bytes
